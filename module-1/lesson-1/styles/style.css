@@ -1,8 +1,39 @@
-
-.title{
-   font-size:2em;
-   font-family: sans-serif;
-   font-style: normal;
-   font-weight:bolder;
-   
+.container {
+  color: red;
 }
+
+.title {
+  font-size: 2em;
+  font-family: sans-serif;
+  font-style: normal;
+  font-weight: bolder;
+  text-transform: uppercase;
+  /* text-decoration-style:wavy;
+   text-decoration-color: rgb(224, 37, 37);
+   text-decoration-line: line-through overline underline; */
+  text-decoration: none;
+  letter-spacing: 0px;
+  word-spacing: 20px;
+  line-height: 30px;
+  text-indent: 150px;
+  text-align: justify;
+}
+
+.box{
+   width: 400px;
+   height: 400px;
+   background-color: aquamarine;
+   border-width: 10px;
+   border-color: brown;
+   border-style: solid;
+
+   border:red solid 20px;
+   /* border-left: 20px groove aqua;
+   border-top: orangered 25px dashed;
+   border-right: dotted blue 20px; */
+   /* border-radius: 150px 200px 25px; */
+
+   
+
+}
+
