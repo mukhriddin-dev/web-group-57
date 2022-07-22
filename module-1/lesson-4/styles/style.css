@@ -1,0 +1,33 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body{
+  background-color: aqua;
+  background: url("https://picsum.photos/500/400");
+  background-repeat: no-repeat;
+  background-size: calc(100% - 500px);
+  background-position: 400px;
+  width: 100%;
+  height: 100vh;
+
+}
+
+.cover{
+  width: 500px;
+  height: 700px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  -o-object-position: -200px 50px;
+  object-position: -200px 50px;
+  background-color:red;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+
+}
