@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="./styles/normalize.css">
+   <link rel="stylesheet" href="./styles/style.css">
+   <title>Lesson 5</title>
+</head>
+
+<body>
+
+
+   <h2>Registration form</h2>
+
+   <form action="https://echo.htmlacademy.ru/" method="post" class="form-card">
+
+      <label for="name">
+         First name: <input type="text" name="name" id="name" placeholder="First name" required minlength="3"
+            maxlength="15" disabled>
+      </label>
+
+
+      <label for="surname">
+         Last name: <input type="text" name="sur-name" id="surname" placeholder="Last name" required>
+      </label>
+
+      <label for="age">
+         Your age: <input type="number" name="age" id="age" placeholder="Your age" required min="16" max="70">
+      </label>
+
+      <label for="email">
+         Email: <input type="email" id="email" name="email" required pattern="([a-z0-9_\.-]+)@([\da-z\.-]+)\.([a-z\.]{2,6})">
+      </label>
+
+      <label for="password">
+         Password: <input type="password" id="password" name="password" required minlength="6" maxlength="12">
+      </label>
+
+      <label for="date">
+         Date of brith: <input type="date" id="date" name="date" required>
+      </label>
+
+      <label for="gender">
+         Gender: <input type="radio" id="email" name="gender"> Male <input type="radio" id="email" name="gender"> Female
+      </label>
+
+
+      <label for="tel">
+         Tel: <input type="tel" id="tel" name="tel" required>
+      </label>
+
+      <select name="region" id="region">  
+         <option value="Toshkent">Toshkent</option>
+         <option value="Toshkent">Toshkent</option>
+         <option value="Toshkent">Toshkent</option>
+         <option value="Toshkent">Toshkent</option>
+         <option value="Toshkent">Toshkent</option>
+         <option value="Toshkent">Toshkent</option>
+         <option value="Toshkent">Toshkent</option>
+         <option value="Toshkent" selected>Farg'ona</option>
+      </select>
+
+      <textarea name="textarea" id="" cols="45" rows="5" required>   </textarea>
+
+
+      <input type="submit" value="Yuborish">
+      <input type="reset" value="Tozalash">
+
+
+
+
+
+
+
+
+
+
+
+   </form>
+
+
+</body>
+
+</html>
