@@ -1,0 +1,259 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+body {
+  overflow-x: hidden;
+}
+
+.container {
+  width: 1400px;
+  margin: 0 auto;
+}
+
+header {
+  background: rgba(0, 0, 0, 0.2);
+}
+
+nav {
+  background: rgb(142, 236, 255);
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  height: 70px;
+  align-items: center;
+}
+
+.nav .nav__brand {
+  font-size: 30px;
+  margin-left: 25px;
+}
+
+.nav .nav__list {
+  display: flex;
+  width: 40%;
+  justify-content: space-around;
+  text-transform: uppercase;
+  list-style-type: none;
+}
+
+.nav .nav__list .nav__list__item .nav__list__item-link {
+  color: black;
+  text-decoration: none;
+}
+
+.nav .nav__list .nav__list__item::after {
+  content: "";
+  width: 0;
+  height: 2px;
+  background: #000;
+  display: block;
+  position: relative;
+  top: 25px;
+  opacity: 1;
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+
+/* .nav .nav__list .nav__list__item:hover::after{
+  content:"";
+  width:100%;
+  height: 2px;
+  background: #000;
+  display: block;
+  position: relative;
+  top: 4px;
+  opacity: 1;
+} */
+
+/* .nav .nav__list .nav__list__item:hover::after{
+  content:"";
+  width:90%;
+  height: 2px;
+  background: #000;
+  display: block;
+  position: relative;
+  top: 4px;
+  opacity: 1;
+} */
+
+/* dropdown menu start */
+
+.dropdown {
+  position: relative;
+}
+
+.dropdown__list {
+  position: absolute;
+  background: #fff;
+  box-shadow: 0px 4px 24px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  list-style-type: none;
+  top: 42px;
+  left: -30px;
+  display: none;
+}
+
+.dropdown__list__item {
+  padding: 9px 18px;
+  width: 100%;
+}
+
+.link {
+  color: #000;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown__list__item:hover {
+  background: #00bafc;
+  color: #fff;
+}
+
+.dropdown__list__item:active {
+  background: #00bafc;
+  color: #fff;
+  opacity: 0.6;
+}
+
+.dropdown__list__item:hover .link {
+  color: #fff;
+}
+
+.dropdown-toggle {
+  padding: 24px 0;
+}
+
+.dropdown:hover .dropdown__list {
+  display: block;
+}
+
+/* dropdown menu finished */
+
+.form {
+  display: block;
+  display: flex;
+  justify-content: center;
+
+  width: 100%;
+}
+.send {
+  /* border: 1px solid red; */
+  margin: 30px auto;
+  width: 450px;
+  height: 55px;
+  display: flex;
+}
+
+input {
+  width: 80%;
+  height: 100%;
+  padding-left: 12px;
+  font-size: 19px;
+  border: none;
+  border-bottom: 2px solid rgb(1, 199, 24);
+  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease;
+  -moz-transition: all 0.3s ease;
+  -ms-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+}
+::placeholder {
+  color: red;
+}
+
+input:focus {
+  outline: none;
+  border-bottom: 5px aquamarine solid;
+}
+
+button {
+  height: 100%;
+  border: none;
+}
+
+input:focus ~ button {
+  background: rgb(1, 199, 24);
+}
+
+fieldset {
+  width: 900px;
+  margin: auto;
+  padding: 5px;
+  border: 2px solid rgb(1, 199, 24);
+}
+
+legend {
+  border: 2px solid rgb(1, 199, 24);
+  padding: 5px;
+  border-radius: 8px;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  -ms-border-radius: 8px;
+  -o-border-radius: 8px;
+}
+
+#one {
+  width: 100%;
+  height: 100vh;
+  background-color: lime;
+}
+
+#two {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(162, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#three {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 238, 0);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#four {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(255, 0, 255);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+}
+
+#five {
+  width: 100%;
+  height: 100vh;
+  background-color: rgb(4, 67, 4);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  position: relative;
+}
+
+
+.btn-top{
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: fixed;
+  cursor: pointer;
+  background: aqua;
+
+}

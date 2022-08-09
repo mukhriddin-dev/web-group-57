@@ -1,0 +1,187 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+  scroll-behavior: smooth;
+}
+
+
+body{
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://picsum.photos/id/101/900/650);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+
+
+
+.modal-container{
+  width: 100%;
+  min-height: 100vh;
+  background-color:rgba(0, 0, 0, 0.626);
+  position: absolute;
+  backdrop-filter: blur(2px);
+  display: flex;
+  justify-content: center;
+  align-items:center;
+  transition: all 3s ease;
+}
+
+.modal-content{
+  width: 420px;
+  height: 540px;
+  background: #fff;
+  text-align: center;
+}
+
+.close{
+  transform: translateX(-100%);
+}
+
+input{
+  border:1px solid red;
+  width: 80%;
+  height: 45px;
+  margin: 6px;
+  padding-left: 10px;
+  color:red;
+  outline: none;
+}
+
+input:focus{
+  border:1px solid blue;
+  border-radius:4px;
+  transition: all 0.1s ease;
+}
+
+
+.btn{
+  width: 200px;
+  height: 40px;
+  display: block;
+  margin:20px auto;
+  outline: none;
+  border:none;
+}
+
+.btn:active{
+  background: green;
+}
+
+.btn:focus{
+  border:none;
+}
+
+
+
+span{
+  position: relative;
+  top: -34px;
+  left:0px;
+}
+
+
+/* custom checkbox */
+
+input[type="checkbox"]{
+  width: 75px;
+  height:28px;
+  display: block;
+  position: relative;
+  left:10%;
+  top:0px;
+  appearance: none;
+  border-radius:30px;
+  
+}
+
+
+input[type="checkbox"]:checked{
+  width: 75px;
+  height:28px;
+  display: block;
+  position: relative;
+  left:10%;
+  top:0px;
+  appearance: none;
+  border-radius:30px;
+  background: lime;
+  
+}
+
+
+
+
+input[type="checkbox"]::after {
+  content:"\2639";
+  width: 26px;
+  height:26px;
+  display: block;
+  position: relative;
+  left:0;
+  top:0px;
+  color:#fff;
+  appearance: none;
+  border-radius:50%;
+  background-color:red;
+  transition: all 0.2s ease;
+  font-size: 26px;
+
+}
+
+
+input[type="checkbox"]:checked:after {
+  content:"\263B";
+  width: 26px;
+  height:26px;
+  font-size: 26px;
+  display: block;
+  position: relative;
+  left:47px;
+  top:0px;
+  appearance: none;
+  border-radius:50%;
+  background-color:rgb(0, 0, 0)
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* custom checkbox end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+::placeholder{
+  color:rgba(0, 0, 139, 0.683);
+}
+
+

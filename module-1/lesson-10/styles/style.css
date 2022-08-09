@@ -1,0 +1,29 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "DM Sans", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.container {
+  width: 1296px;
+  margin: 0 auto;
+  background: silver;
+  padding: 0 40px;
+}
+
+
+:root {
+  --main-color: rgb(0, 73, 110);
+  --line-height: 35px;
+}
+
+header{
+   background: var(--main-color);
+}
